@@ -34,12 +34,10 @@
 
 <script type="text/javascript">
   import AppForm from 'genesis/components/form/AppForm.vue'
-  import AppWizard from 'genesis/components/form/AppWizard.vue'
+  import AppFormWizard from 'genesis/components/form/AppFormWizard.vue'
   import AppFormTabs from 'genesis/components/form/AppFormTabs.vue'
   import AppButtonBar from 'genesis/components/button/AppButtonBar.vue'
   import MixinNavigation from 'genesis/components/@mixins/MixinNavigation'
-  import MixinNavigationWizard from 'genesis/components/@mixins/MixinNavigationWizard'
-  import MixinNavigationTabs from 'genesis/components/@mixins/MixinNavigationTabs'
   import { MixinComputed, MixinData, MixinMethods, MixinProps } from './model'
   import { MixinForm } from './model/form'
 
@@ -54,13 +52,11 @@
       MixinMethods,
       MixinProps,
       MixinNavigation,
-      MixinNavigationWizard,
-      MixinNavigationTabs,
       MixinForm
     ],
     name: 'app-crud-form',
     components: {
-      AppForm, AppFormTabs, AppWizard, AppButtonBar
+      AppForm, AppFormTabs, AppFormWizard, AppButtonBar
     }
   }
   export default AppCrudForm
